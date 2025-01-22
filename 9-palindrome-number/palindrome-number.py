@@ -6,7 +6,6 @@ class Solution:
             return False
         
         while x > 0:
-            d = x%10
-            sum = (sum * 10) + d
+            sum = (sum * 10) + (x%10)
             x = x//10
         return sum == copy
